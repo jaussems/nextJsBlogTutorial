@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -11,8 +13,12 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <Link href="/posts/first-post">First Post</Link>
         </h1>
+
+        <h2>
+          Navigate to <Link href="/posts/test-post">Test Post</Link>
+        </h2>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
