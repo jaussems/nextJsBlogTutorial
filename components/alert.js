@@ -9,6 +9,7 @@ export default function Alert({ children, type }) {
                 [styles.error]: type === 'error',
             })}
         >
+            <h2>Test</h2>
             {children}
         </div>
     );

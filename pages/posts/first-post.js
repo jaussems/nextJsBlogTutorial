@@ -2,8 +2,21 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
 import ImageComponent from '../../components/image';
+import Alert from '../../components/alert';
+import { useState } from 'react';
+
+
+
+
 
 export default function FirstPost() {
+    const [toggleType, setToggleType] = useState(false);
+
+    function toggleShowAlert() {
+        setToggleType(!toggleType);
+    }
+
+
     return (
         <Layout>
             <Head>
@@ -14,6 +27,11 @@ export default function FirstPost() {
             <h2>
                 <Link href="/">Back to home</Link>
             </h2>
+            <button onClick={() => {
+                toggleShowAlert()
+            }}>Toggle Alert</button>
+
+            <Alert type={toggleType ? 'success' : 'error'}></Alert>
         </Layout>
     );
 }
