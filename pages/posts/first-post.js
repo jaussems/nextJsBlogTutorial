@@ -31,7 +31,7 @@ export default function FirstPost() {
                 toggleShowAlert()
             }}>Toggle Alert</button>
 
-            <Alert type={toggleType ? 'success' : 'error'}></Alert>
+            <Alert type={toggleType}></Alert>
         </Layout>
     );
 }

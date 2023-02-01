@@ -1,12 +1,12 @@
 import styles from '../styles/alert.module.css';
 import { clsx } from 'clsx';
 
-export default function Alert({ children, type }) {
+export default function Alert({ children, isSuccess }) {
     return (
         <div
             className={clsx({
-                [styles.success]: type === 'success',
-                [styles.error]: type === 'error',
+                [styles.success]: isSuccess,
+                [styles.error]: !isSuccess,
             })}
         >
             <h2>Test</h2>
