@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
         <p>
           This is a introduction example Site to get a grasp of what NextJs is about.
         </p>
-        Go to my first <Link href="/posts/first-post">post</Link>
+        Go to my first <Link href="/posts/pre-rendering">post</Link>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
