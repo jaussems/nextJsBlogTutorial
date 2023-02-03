@@ -3,7 +3,7 @@ export interface ILayOut {
   home?: boolean;
 }
 
-export interface IDataModel {
+export interface IPostData {
   date: string;
   title: string;
 }
